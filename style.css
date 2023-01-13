@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ## Colors */
+  /* ### Neutral */
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+
+  /* FONT */
+  --epilogue-font: "Epilogue", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--epilogue-font);
+  /* font-size: 1.8rem; */
+  background-color: var(--almost-white);
+}
+/* HEADER */
+header {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: flex-start; */
+  align-items: center;
+  gap: 8rem;
+  /* background-color: blue; */
+  padding: 1.8rem 4.8rem;
+  /* height: 9.6rem; */
+}
+.logo-icon {
+  /* width: 100%; */
+  /* height: 2.2rem; */
+}
+.nav-main,
+.nav-sign {
+  list-style: none;
+  display: flex;
+  gap: 3.8rem;
+}
+.nav-main a:link,
+.nav-main a:visited {
+  text-decoration: none;
+  color: var(--medium-gray);
+  font-size: 1.4rem;
+}
+.nav-sign {
+  margin-left: auto;
+}
+.nav-sign button {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  /* background-color: aqua; */
+  padding: 1rem 2.4rem;
+  font-family: var(--epilogue-font);
+  color: var(--medium-gray);
+  cursor: pointer;
+}
+.nav-sign li .btn:nth-child(1) {
+  /* border: 1px solid var(--medium-gray); */
+}
