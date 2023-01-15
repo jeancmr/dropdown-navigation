@@ -33,9 +33,9 @@ header {
   display: flex;
   /* justify-content: space-around; */
   /* align-items: flex-start; */
-  align-items: center;
+  /* align-items: center; */
   gap: 6rem;
-  padding: 1.8rem 3rem;
+  padding: 2.8rem 3rem;
   /* height: 9.6rem; */
 }
 .logo-icon {
@@ -57,6 +57,75 @@ header {
   font-size: 1.4rem;
   color: inherit;
 }
+.nav-main a:hover,
+.nav-main a:active,
+.nav-sign a:hover,
+.nav-sign a:active,
+.btn-dropdown span:hover {
+  color: var(--almost-black);
+}
+/* ######### DROPDOWN MENU */
+.btn-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.btn-dropdown span {
+  font-size: 1.4rem;
+  font-family: var(--epilogue-font);
+  color: var(--medium-gray);
+}
+.arrow-up {
+  display: none;
+}
+.arrow-down {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  stroke: var(--medium-gray);
+}
+.arrow-down:hover {
+  stroke: var(--almost-black);
+}
+
+.dp-container {
+  position: relative;
+  /* background-color: red; */
+}
+/* .dp-container li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dp-container li:hover {
+  background-color: var(--almost-white);
+} */
+.dp-menu {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #fff;
+  margin-top: 18px;
+  left: -58px;
+  padding: 2rem 2.6rem;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+.dp-menu-r {
+  left: 0px;
+  width: max-content;
+}
+
 .nav-sign {
   margin-left: auto;
 }
@@ -68,6 +137,15 @@ header {
   border: 1px solid var(--medium-gray);
   padding: 1rem 2rem;
   border-radius: 10px;
+}
+.nav-sign .sign--register:hover,
+.nav-sign .sign--register:active {
+  border-color: var(--almost-black);
+}
+.dp-container .btn-dropdown:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
 }
 
 /* ###################  HERO ########### */
