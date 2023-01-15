@@ -18,23 +18,23 @@ html {
 }
 body {
   font-family: var(--epilogue-font);
-  /* font-size: 1.8rem; */
   background-color: var(--almost-white);
   color: var(--medium-gray);
 }
 .container {
-  max-width: 140rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 30px 90px;
 }
 /* ###################  HEADER ########### */
 header {
+  /* max-width: 130rem; */
+  margin: 0 auto;
   display: flex;
   /* justify-content: space-around; */
   /* align-items: flex-start; */
   align-items: center;
-  gap: 8rem;
-  /* background-color: blue; */
+  gap: 6rem;
   padding: 1.8rem 3rem;
   /* height: 9.6rem; */
 }
@@ -74,25 +74,30 @@ header {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 9rem;
+  /* align-items: center; */
+  /* gap: 18rem; */
 }
 .hero-title {
   font-size: 7.6rem;
   color: var(--almost-black);
+  max-width: 500px;
+  /* margin-bottom: 48px; */
 }
 .hero-paragraph {
   font-size: 1.8rem;
   line-height: 1.5;
+  max-width: 480px;
+  /* margin-bottom: 44px; */
 }
 .btn-hero:link,
 .btn-hero:visited {
+  width: fit-content;
   padding: 1.4rem 2.4rem;
   border-radius: 10px;
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--almost-white);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
   background-color: var(--almost-black);
 }
@@ -101,11 +106,23 @@ header {
   align-items: center;
   gap: 4rem;
 }
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.primary-text {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
 .hero-img-box {
-  text-align: center;
+  text-align: end;
+  align-self: center;
 }
 .hero-img {
-  /* width: 70%; */
   height: 80%;
   width: 80%;
 }
