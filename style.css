@@ -60,8 +60,8 @@ header {
 .nav-main a:hover,
 .nav-main a:active,
 .nav-sign a:hover,
-.nav-sign a:active,
-.btn-dropdown span:hover {
+.nav-sign a:active
+/* .btn-dropdown span:hover */ {
   color: var(--almost-black);
 }
 /* ######### DROPDOWN MENU */
@@ -73,6 +73,7 @@ header {
   background: none;
   cursor: pointer;
 }
+
 .btn-dropdown span {
   font-size: 1.4rem;
   font-family: var(--epilogue-font);
@@ -86,8 +87,11 @@ header {
   height: 12px;
   display: inline-block;
   stroke: var(--medium-gray);
+  transition: all 0.4s ease;
 }
-.arrow-down:hover {
+.btn-dropdown:hover .arrow-down,
+.btn-dropdown:hover span {
+  color: var(--almost-black);
   stroke: var(--almost-black);
 }
 
@@ -142,10 +146,28 @@ header {
 .nav-sign .sign--register:active {
   border-color: var(--almost-black);
 }
-.dp-container .btn-dropdown:focus + ul {
+
+/* .dp-container .btn-dropdown:focus + ul {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
+} */
+.dp-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+/* ATTEMPT TO KEEP BOTH FONT-SIZE AND ICON BUTTON BOLD */
+/* .dp-container .btn-dropdown span + .dp-menu-open,
+.dp-container .btn-dropdown .arrow-down + .dp-menu-open {
+  color: var(--almost-black);
+  stroke: var(--almost-black);
+} */
+/* .btn-dropdown:focus .arrow-down {
+  transform: rotate(180deg);
+} */
+.arrow-up {
+  transform: rotate(180deg);
 }
 
 /* ###################  HERO ########### */
