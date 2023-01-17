@@ -113,7 +113,14 @@
           </div>
         </div>
         <div class="hero-img-box">
-          <img class="hero-img" src="images/image-hero-desktop.png" alt="" />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/image-hero-mobile.png"
+            />
+            <img class="hero-img" src="images/image-hero-desktop.png" alt="" />
+          </picture>
+          <!-- <img class="hero-img" src="images/image-hero-desktop.png" alt="" /> -->
         </div>
       </section>
     </main>
