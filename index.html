@@ -18,98 +18,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <script defer src="script.js"></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="menu-overlay"></div>
       <img class="logo-icon" src="images/logo.svg" alt="logo snap" />
-      <nav class="nav-main">
-        <li class="dp-container">
-          <button class="btn-dropdown">
-            <span>Features</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="arrow-down"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="arrow-up"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4.5 15.75l7.5-7.5 7.5 7.5"
-              />
-            </svg> -->
-          </button>
-          <ul class="dp-menu">
-            <li><a href="#">Todo List</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Reminders</a></li>
-            <li><a href="#">Planning</a></li>
-          </ul>
-        </li>
-        <li class="dp-container">
-          <button class="btn-dropdown">
-            <span>Company</span>
-            <!-- <a>Company</a> -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="arrow-down"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="arrow-up"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4.5 15.75l7.5-7.5 7.5 7.5"
-              />
-            </svg> -->
-          </button>
-          <ul class="dp-menu dp-menu-r">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </nav>
-      <ul class="nav-sign">
-        <li><a href="#" class="sign">Login</a></li>
-        <li><a href="#" class="sign sign--register">Register</a></li>
-      </ul>
+      <div class="nav-header">
+        <nav class="nav-main">
+          <li class="dp-container">
+            <button class="btn-dropdown" data-toggle="dp-menu">
+              <span>Features</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="arrow-down"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <ul class="dp-menu">
+              <li><a href="#">Todo List</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Reminders</a></li>
+              <li><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="dp-container">
+            <button class="btn-dropdown" data-toggle="dp-menu">
+              <span>Company</span>
+              <!-- <a>Company</a> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="arrow-down"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <ul class="dp-menu dp-menu-r">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+        <ul class="nav-sign">
+          <li><a href="#" class="sign">Login</a></li>
+          <li><a href="#" class="sign sign--register">Register</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
     <main>
       <section class="hero container">

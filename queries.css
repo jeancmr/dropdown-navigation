@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  body {
+    overflow-x: hidden;
+    position: relative;
+    /* background-color: blue; */
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .nav-header {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    flex: auto;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    padding-left: 32px;
+    gap: 2.8rem;
+    width: 24%;
+    /* align-items: center; */
+    background-color: var(--almost-white);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 999;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .nav-main {
+    flex-direction: column;
+    gap: 2.8rem;
+    /* align-items: ; */
+  }
+  .nav-sign {
+    flex-direction: column;
+    gap: 2.8rem;
+    /* align-items: center; */
+  }
+  /* ANIMATION BURGER MENU */
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .header .menu-overlay.active {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+  }
+  /* BLACK LANDSCAPE */
+}
