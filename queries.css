@@ -14,7 +14,7 @@
     padding-top: 4rem;
   }
   .hero-img-box {
-    text-align: center;
+    text-align: end;
     align-self: flex-start;
   }
 
@@ -53,7 +53,7 @@
     padding-top: 90px;
     padding-left: 32px;
     gap: 2.8rem;
-    width: 24%;
+    width: 20rem;
     /* align-items: center; */
     background-color: var(--almost-white);
     transform: translateX(100%);
@@ -97,16 +97,19 @@
   }
   .hero-img-box {
     grid-row: 1;
+    width: 100%;
   }
   .hero-text-box {
     align-items: center;
   }
   .primary-text {
     align-items: center;
+    gap: 30px;
   }
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     max-width: fit-content;
+    text-align: center;
   }
   .hero-paragraph {
     text-align: center;
@@ -116,7 +119,10 @@
     justify-content: center;
   }
   .hero-img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    padding: 0;
   }
 }
