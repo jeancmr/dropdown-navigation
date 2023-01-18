@@ -23,18 +23,18 @@ body {
   /* position: relative; */
 }
 .container {
-  max-width: 130rem;
+  max-width: 125rem;
   margin: 0 auto;
   padding: 30px 30px;
 }
 /* ###################  HEADER ########### */
 header {
-  max-width: 130rem;
+  max-width: 140rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 6rem;
-  padding: 2.8rem 3rem;
+  padding: 3rem 3rem;
   /* height: 9.6rem; */
 }
 .nav-header {
@@ -242,7 +242,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
+  margin-left: 3rem;
 }
 .primary-text {
   padding-top: 9rem;
@@ -255,8 +256,10 @@ header {
   padding-bottom: 9rem;
 }
 .hero-img-box {
-  text-align: center;
-  align-self: center;
+  /* text-align: center;
+  align-self: center; */
+  text-align: end;
+  align-self: flex-start;
 }
 .hero-img {
   height: 80%;

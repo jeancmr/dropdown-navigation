@@ -97,8 +97,11 @@
   }
   .hero-img-box {
     grid-row: 1;
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
+    /* align-self: flex-start; */
   }
+
   .hero-text-box {
     align-items: center;
   }
@@ -118,11 +121,17 @@
   .featured {
     justify-content: center;
   }
+  /* .hero-img {
+    width: 100%;
+    height: 100%;
+  } */
+  .container {
+    padding: 0;
+  }
+}
+@media (max-width: 564px) {
   .hero-img {
     width: 100%;
     height: 100%;
-  }
-  .container {
-    padding: 0;
   }
 }
