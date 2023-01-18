@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -29,7 +28,11 @@
       <div class="nav-header">
         <nav class="nav-main">
           <li class="dp-container">
-            <button class="btn-dropdown" data-toggle="dp-menu">
+            <button
+              class="btn-dropdown"
+              data-toggle="dp-menu"
+              onclick="toggleMenuL()"
+            >
               <span>Features</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +40,8 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="arrow-down"
+                id="arrow-down-l"
+                class=".arrow-down"
               >
                 <path
                   stroke-linecap="round"
@@ -46,7 +50,7 @@
                 />
               </svg>
             </button>
-            <ul class="dp-menu">
+            <ul class="dp-menu" id="menul">
               <li><a href="#">Todo List</a></li>
               <li><a href="#">Calendar</a></li>
               <li><a href="#">Reminders</a></li>
@@ -54,7 +58,11 @@
             </ul>
           </li>
           <li class="dp-container">
-            <button class="btn-dropdown" data-toggle="dp-menu">
+            <button
+              class="btn-dropdown"
+              data-toggle="dp-menu"
+              onclick="toggleMenuR()"
+            >
               <span>Company</span>
               <!-- <a>Company</a> -->
               <svg
@@ -63,7 +71,8 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="arrow-down"
+                id="arrow-down-r"
+                class=".arrow-down"
               >
                 <path
                   stroke-linecap="round"
@@ -72,7 +81,7 @@
                 />
               </svg>
             </button>
-            <ul class="dp-menu dp-menu-r">
+            <ul class="dp-menu dp-menu-r" id="menur">
               <li><a href="#">History</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Blog</a></li>
@@ -124,12 +133,5 @@
         </div>
       </section>
     </main>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>

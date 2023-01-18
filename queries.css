@@ -3,13 +3,12 @@
   .hero-title {
     max-width: min-content;
   }
+
   .hero-paragraph {
     max-width: none;
     display: inline-block;
   }
-  /* .hero-text-box {
-    justify-content: baseline;
-  } */
+
   .primary-text {
     padding-top: 4rem;
   }
@@ -21,6 +20,7 @@
   .featured {
     flex-wrap: wrap;
   }
+
   .container {
     padding: 30px 1.6rem;
   }
@@ -31,21 +31,25 @@
     cursor: pointer;
     z-index: 1000;
   }
+
   body {
     overflow-x: hidden;
     position: relative;
   }
+
   html {
     overflow-x: hidden;
   }
+
   .no-scroll {
     overflow-y: hidden;
   }
+
   .nav-header {
     position: absolute;
     right: 0px;
     height: 100vh;
-    flex: auto;
+    /* flex: auto; */
     top: 0px;
     display: flex;
     flex-direction: column;
@@ -54,25 +58,37 @@
     padding-left: 32px;
     gap: 2.8rem;
     width: 20rem;
-    /* align-items: center; */
     background-color: var(--almost-white);
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     z-index: 999;
+    overflow-y: scroll;
   }
+
+  .dp-menu {
+    margin-top: 0px;
+    background-color: transparent;
+    left: 0px;
+  }
+
+  .dp-menu-open {
+    position: relative;
+  }
+
   .nav-active {
     transform: translateX(0%);
   }
+
   .nav-main {
     flex-direction: column;
     gap: 2.8rem;
-    /* align-items: ; */
   }
+
   .nav-sign {
     flex-direction: column;
     gap: 2.8rem;
-    /* align-items: center; */
   }
+
   /* ANIMATION BURGER MENU */
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -121,10 +137,7 @@
   .featured {
     justify-content: center;
   }
-  /* .hero-img {
-    width: 100%;
-    height: 100%;
-  } */
+
   .container {
     padding: 0;
   }

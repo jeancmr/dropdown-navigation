@@ -16,15 +16,22 @@ const navSlide = () => {
     htmlEl.classList.toggle("no-scroll");
     bodyEl.classList.toggle("no-scroll");
   });
-  // closeNavMenu.addEventListener("click", toggleNav);
-  // close the navMenu by clicking outside
-  // menuOverlay.addEventListener("click", function toggleNav() {
-  //   // navMenu.classList.toggle("open");
-  //   menuOverlay.classList.toggle("active");
-  //   // document.body.classList.toggle("hidden-scrolling");
-  // });
 };
 navSlide();
+
+function toggleMenuR() {
+  let menur = document.getElementById("menur");
+  let arrowR = document.getElementById("arrow-down-r");
+  arrowR.classList.toggle("arrow-up");
+  menur.classList.toggle("dp-menu-open");
+}
+function toggleMenuL() {
+  let menul = document.getElementById("menul");
+  let arrowL = document.getElementById("arrow-down-l");
+
+  arrowL.classList.toggle("arrow-up");
+  menul.classList.toggle("dp-menu-open");
+}
 
 // const btnNavDrop = document.querySelector(".btn-dropdown");
 // const ulMenu = document.querySelector(".dp-menu");

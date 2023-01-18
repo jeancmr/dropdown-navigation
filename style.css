@@ -20,7 +20,6 @@ body {
   font-family: var(--epilogue-font);
   background-color: var(--almost-white);
   color: var(--medium-gray);
-  /* position: relative; */
 }
 .container {
   max-width: 125rem;
@@ -35,7 +34,6 @@ header {
   justify-content: space-between;
   gap: 6rem;
   padding: 3rem 3rem;
-  /* height: 9.6rem; */
 }
 .nav-header {
   display: flex;
@@ -43,8 +41,6 @@ header {
   flex: 1;
 }
 .logo-icon {
-  /* width: 100%; */
-  /* height: 2.2rem; */
   height: 100%;
 }
 .nav-main,
@@ -64,10 +60,10 @@ header {
 .nav-main a:hover,
 .nav-main a:active,
 .nav-sign a:hover,
-.nav-sign a:active
-/* .btn-dropdown span:hover */ {
+.nav-sign a:active {
   color: var(--almost-black);
 }
+
 /* ######### DROPDOWN MENU */
 .btn-dropdown {
   display: flex;
@@ -83,17 +79,18 @@ header {
   font-family: var(--epilogue-font);
   color: var(--medium-gray);
 }
-.arrow-up {
-  display: none;
-}
-.arrow-down {
+
+.arrow-down,
+#arrow-down-l,
+#arrow-down-r {
   width: 12px;
   height: 12px;
   display: inline-block;
   stroke: var(--medium-gray);
   transition: all 0.4s ease;
 }
-.btn-dropdown:hover .arrow-down,
+.btn-dropdown:hover #arrow-down-l,
+.btn-dropdown:hover #arrow-down-r,
 .btn-dropdown:hover span {
   color: var(--almost-black);
   stroke: var(--almost-black);
@@ -101,18 +98,8 @@ header {
 
 .dp-container {
   position: relative;
-  /* background-color: red; */
 }
-/* .dp-container li {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dp-container li:hover {
-  background-color: var(--almost-white);
-} */
+
 .dp-menu {
   position: absolute;
   list-style: none;
@@ -129,14 +116,12 @@ header {
   transform: translateY(-10px);
   transition: all 0.4s ease;
 }
+
 .dp-menu-r {
   left: 0px;
   width: max-content;
 }
 
-/* .nav-sign {
-  margin-left: auto;
-} */
 .nav-sign .sign {
   font-size: 1.4rem;
   font-family: var(--epilogue-font);
@@ -151,25 +136,12 @@ header {
   border-color: var(--almost-black);
 }
 
-/* .dp-container .btn-dropdown:focus + ul {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(0);
-} */
 .dp-menu-open {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
 }
-/* ATTEMPT TO KEEP BOTH FONT-SIZE AND ICON BUTTON BOLD */
-/* .dp-container .btn-dropdown span + .dp-menu-open,
-.dp-container .btn-dropdown .arrow-down + .dp-menu-open {
-  color: var(--almost-black);
-  stroke: var(--almost-black);
-} */
-/* .btn-dropdown:focus .arrow-down {
-  transform: rotate(180deg);
-} */
+
 .arrow-up {
   transform: rotate(180deg);
 }
@@ -178,6 +150,7 @@ header {
 .burger {
   display: none;
 }
+
 .burger div {
   width: 25px;
   height: 2px;
@@ -188,7 +161,6 @@ header {
 
 /* BLACK LANDSCAPE */
 .menu-overlay {
-  /* display: none; */
   position: fixed;
   z-index: 600;
   background-color: rgba(0, 0, 0, 0.5);
@@ -205,26 +177,21 @@ header {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* align-items: center; */
-  /* gap: 18rem; */
 }
 .hero-title {
   font-size: 7.6rem;
   color: var(--almost-black);
   max-width: 500px;
-  /* margin-bottom: 48px; */
 }
 .hero-paragraph {
   font-size: 1.8rem;
   line-height: 1.5;
   max-width: 480px;
-  /* margin-bottom: 44px; */
 }
 .btn-hero:link,
 .btn-hero:visited {
   width: fit-content;
   padding: 1.8rem 2.6rem;
-
   border-radius: 16px;
   font-size: 1.8rem;
   color: var(--almost-white);
@@ -233,35 +200,35 @@ header {
   display: inline-block;
   background-color: var(--almost-black);
 }
+
 .featured {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
+
 .hero-text-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin: 0 2rem; */
   margin-left: 3rem;
 }
+
 .primary-text {
   padding-top: 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 48px;
-  /* padding-bottom: 6rem; */
-  /* padding-top: 4rem; */
   padding-bottom: 9rem;
 }
+
 .hero-img-box {
-  /* text-align: center;
-  align-self: center; */
   text-align: end;
   align-self: flex-start;
 }
+
 .hero-img {
-  height: 80%;
-  width: 80%;
+  height: 85%;
+  width: 85%;
 }
