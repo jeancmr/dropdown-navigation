@@ -56,7 +56,7 @@
     justify-content: flex-start;
     padding-top: 90px;
     padding-left: 32px;
-    gap: 2.8rem;
+    gap: 3.2rem;
     width: 20rem;
     background-color: var(--almost-white);
     transform: translateX(100%);
@@ -87,8 +87,12 @@
   .nav-sign {
     flex-direction: column;
     gap: 2.8rem;
+    text-align: center;
+    padding-right: 4rem;
   }
-
+  .nav-sign .sign--register {
+    padding: 1rem 3rem;
+  }
   /* ANIMATION BURGER MENU */
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);

@@ -121,6 +121,11 @@ header {
   left: 0px;
   width: max-content;
 }
+#menul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 .nav-sign .sign {
   font-size: 1.4rem;
@@ -199,6 +204,13 @@ header {
   font-weight: 700;
   display: inline-block;
   background-color: var(--almost-black);
+  border: 1px solid var(--almost-black);
+}
+.btn-hero:hover,
+.btn-hero:active {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  /* border: 1px solid var(--almost-black); */
 }
 
 .featured {
